@@ -4,11 +4,9 @@ sap.ui.define([
 ], function (jQuery, Controller) {
 	"use strict";
 
-	return Controller.extend("sapui5-sample-project.sapui5-sample-project.controller.View1", {
+	return Controller.extend("sapui5-sample-project.sapui5-sample-project.controller.App", {
 
 		onInit: function () {
-			var sUrl = "#" + this.getOwnerComponent().getRouter().getURL("page2");
-			this.byId("link").setHref(sUrl);
 		},
 
 		onHomePress: function () {
@@ -24,12 +22,8 @@ sap.ui.define([
 			var tab = event.getParameter('item');
 
 			label.setText(tab.getText());
-		},
-
-		onToPage2: function () {
-			window.console.log("page2");
-			this.getOwnerComponent().getRouter().navTo("page2");
 		}
+		
 	});
 
 });

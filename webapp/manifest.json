@@ -14,7 +14,6 @@
 			"version": "1.40.12"
 		}
 	},
-
 	"sap.ui": {
 		"technology": "UI5",
 		"icons": {
@@ -30,17 +29,13 @@
 			"tablet": true,
 			"phone": true
 		},
-		"supportedThemes": [
-			"sap_hcb",
-			"sap_belize"
-
-		]
+		"supportedThemes": ["sap_hcb", "sap_belize"]
 	},
-
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "sapui5-sample-project.sapui5-sample-project.view.View1",
-			"type": "XML"
+			"viewName": "sapui5-sample-project.sapui5-sample-project.view.App",
+			"type": "XML",
+			"async": true
 		},
 		"dependencies": {
 			"minUI5Version": "1.60.1",
@@ -74,20 +69,36 @@
 				"async": true,
 				"viewPath": "sapui5-sample-project.sapui5-sample-project.view",
 				"controlAggregation": "pages",
-				"controlId": "idAppControl",
-				"clearControlAggregation": false
+				"controlId": "rootControl",
+				"clearControlAggregation": false,
+				"viewLevel": 1,
+				"bypassed": {
+					"target": []
+				}
 			},
 			"routes": [{
-				"name": "RouteView1",
-				"pattern": "RouteView1",
-				"target": ["TargetView1"]
+				"name": "page1",
+				"pattern": "",
+				"target": ["page1"]
+			}, {
+				"name": "page2",
+				"pattern": "",
+				"target": ["page2"]
 			}],
 			"targets": {
-				"TargetView1": {
+				"page1": {
 					"viewType": "XML",
 					"transition": "slide",
 					"clearControlAggregation": false,
-					"viewName": "View1"
+					"viewName": "View1",
+					"viewLevel": 0
+				},
+				"page2": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "View2",
+					"viewLevel": 1
 				}
 			}
 		}

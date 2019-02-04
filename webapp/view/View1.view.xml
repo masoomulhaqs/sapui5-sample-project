@@ -1,43 +1,14 @@
-<mvc:View controllerName="sapui5-sample-project.sapui5-sample-project.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml"
-	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"	xmlns:tnt="sap.tnt">
-	<tnt:ToolHeader>
-		<Button icon="sap-icon://home" type="Transparent" press="onHomePress">
-			<layoutData>
-				<OverflowToolbarLayoutData priority="NeverOverflow" />
-			</layoutData>
-		</Button>
-		<IconTabHeader id="iconTabHeader"
-			selectedKey="invalidKey"
-			select="onSelectTab"
-			showOverflowSelectList="true"
-			backgroundDesign="Transparent">
-			<layoutData>
-				<OverflowToolbarLayoutData
-					priority="NeverOverflow"
-					shrinkable="true" />
-			</layoutData>
-			<items>
-				<IconTabFilter text="Documentation">
-				</IconTabFilter>
-				<IconTabFilter text="Explored">
-				</IconTabFilter>
-				<IconTabFilter text="API Reference">
-				</IconTabFilter>
-				<IconTabFilter text="Demo Apps">
-				</IconTabFilter>
-			</items>
-		</IconTabHeader>
-
-	</tnt:ToolHeader>
-	
-	<App id="idAppControl">
-		<pages>
-			<Page title="{i18n>title}">
-				<content></content>
-			</Page>
-			<Page title="{i18n>title}">
-				<content></content>
-			</Page>
-		</pages>
-	</App>
-</mvc:View>
+<View
+	xmlns="sap.m"
+	xmlns:layout="sap.ui.layout"
+	controllerName="sapui5-sample-project.sapui5-sample-project.controller.View1">
+	<Page
+		title="First Page">
+		<content>
+			<layout:VerticalLayout>
+				<Button text="To the second Page" press="onToPage2"/>
+				<Link id="link" text="A link to the second Page"/>
+			</layout:VerticalLayout>
+		</content>
+	</Page>
+</View>

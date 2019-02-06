@@ -1,7 +1,7 @@
 <mvc:View controllerName="sapui5-sample-project.sapui5-sample-project.controller.App" xmlns:html="http://www.w3.org/1999/xhtml"
 	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:tnt="sap.tnt">
 	<tnt:ToolHeader>
-		<Button icon="sap-icon://home" type="Transparent">
+		<Button icon="sap-icon://home" type="Transparent" press="navigateToHome">
 			<layoutData>
 				<OverflowToolbarLayoutData priority="NeverOverflow" />
 			</layoutData>

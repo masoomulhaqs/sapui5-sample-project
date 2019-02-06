@@ -17,7 +17,7 @@
 						<Input id="location" value="{/location}"/>
 						<Label text="Portfolio"/>
 						<Input id="portfolio" value="{/portfolio}"/>
-						<Button text="Submit" press="onPress" />
+						<Button type="Accept" text="Submit" press="onPress" />
 					</f:content>
 				</f:SimpleForm>
 			</VBox>

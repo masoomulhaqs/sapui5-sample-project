@@ -1,8 +1,9 @@
 sap.ui.define([
 	'jquery.sap.global',
 	'sap/ui/core/mvc/Controller',
-	'sap/ui/model/json/JSONModel'
-], function (jQuery, Controller, JSONModel) {
+	'sap/ui/model/json/JSONModel',
+	'sap/m/MessageToast'
+], function (jQuery, Controller, JSONModel, MessageToast) {
 	"use strict";
 
 	return Controller.extend("sapui5-sample-project.sapui5-sample-project.controller.UserForm", {
@@ -25,6 +26,7 @@ sap.ui.define([
 		},
 		onPress: function(evt) {
 			window.console.log(evt);
+			MessageToast.show("Form submitted successfully!");
 		}
 	});
 

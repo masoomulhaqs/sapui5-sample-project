@@ -10,11 +10,12 @@ sap.ui.define([
 		},
 
 		onHomePress: function () {
-			var iconTabHeader = this.byId('iconTabHeader');
-			iconTabHeader.setSelectedKey('invalidKey');
+			// var iconTabHeader = this.byId('iconTabHeader');
+			// iconTabHeader.setSelectedKey('invalidKey');
 
-			var label = this.byId('labelId');
-			label.setText('Home Screen');
+			// var label = this.byId('labelId');
+			// label.setText('Home Screen');
+			this.getOwnerComponent().getRouter().navTo("home");
 		},
 
 		onSelectTab: function (event) {

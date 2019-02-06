@@ -9,6 +9,16 @@
 		},
 		"title": "{{appTitle}}",
 		"description": "{{appDescription}}",
+		"dataSources": {
+			"mainService": {
+				"uri": "/ES5/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml"
+				}
+			}
+		},
 		"sourceTemplate": {
 			"id": "ui5template.basicSAPUI5ApplicationProject",
 			"version": "1.40.12"
@@ -42,7 +52,8 @@
 			"libs": {
 				"sap.ui.layout": {},
 				"sap.ui.core": {},
-				"sap.m": {}
+				"sap.m": {},
+				"sap.f": {}
 			}
 		},
 		"routing": {
@@ -98,7 +109,7 @@
 					"transition": "slide",
 					"clearControlAggregation": false,
 					"viewName": "Carousel",
-					"viewLevel": 1,
+					"viewLevel": 2,
 					"controlId": "appRootControl"
 				},
 				"userform": {
@@ -106,7 +117,7 @@
 					"viewName": "UserForm",
 					"transition": "slide",
 					"clearControlAggregation": false,
-					"viewLevel": 1,
+					"viewLevel": 3,
 					"controlId": "appRootControl"
 				},
 				"appconfig": {
@@ -122,7 +133,7 @@
 					"transition": "slide",
 					"clearControlAggregation": false,
 					"viewName": "View1",
-					"viewLevel": 3,
+					"viewLevel": 5,
 					"controlId": "appRootControl"
 				},
 				"page2": {
@@ -130,7 +141,7 @@
 					"transition": "slide",
 					"clearControlAggregation": false,
 					"viewName": "View2",
-					"viewLevel": 2,
+					"viewLevel": 6,
 					"controlId": "appRootControl"
 				}
 			}
@@ -146,10 +157,14 @@
 					"bundleName": "sapui5-sample-project.sapui5-sample-project.i18n.i18n"
 				}
 			},
-			"user": {
+			"userData": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/UserData.json"
-			}
+			},
+			"": {
+				"dataSource": "mainService",
+				"preload": true
+			} 
 		},
 		"resources": {
 			"css": [{

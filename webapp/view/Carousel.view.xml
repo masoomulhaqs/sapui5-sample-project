@@ -1,0 +1,10 @@
+<View xmlns="sap.m" xmlns:layout="sap.ui.layout"
+		xmlns:core="sap.ui.core"
+	controllerName="sapui5-sample-project.sapui5-sample-project.controller.Carousel">
+	<Carousel>
+		<pages>
+			<Image src="https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg" alt="Example picture of speakers"/>
+			<Image src="https://images.pexels.com/photos/946343/pexels-photo-946343.jpeg" alt="Example picture of USB flash drive"/>
+		</pages>
+	</Carousel>
+</View>

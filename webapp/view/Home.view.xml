@@ -1,0 +1,4 @@
+<View xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:core="sap.ui.core"
+	controllerName="sapui5-sample-project.sapui5-sample-project.controller.Home">
+	<MessagePage showHeader="false" icon="sap-icon://home" text="SAP UI5 Session for Beginners!" description=""></MessagePage>
+</View>

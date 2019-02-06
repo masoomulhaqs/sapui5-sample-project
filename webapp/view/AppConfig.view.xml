@@ -1,0 +1,25 @@
+<View xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	controllerName="sapui5-sample-project.sapui5-sample-project.controller.AppConfig">
+	<Page title="About Tutorial">
+		<content>
+			<VBox class="sapUiSmallMargin">
+				<MessageStrip text="Below data has been loading from Resource Model which is nothing but i18n data" showIcon="true" showCloseButton="true"
+					class="sapUiMediumMarginBottom"></MessageStrip>
+				<f:SimpleForm id="SimpleFormDisplay354" editable="false" layout="ResponsiveGridLayout" labelSpanXL="3" labelSpanL="3" labelSpanM="3"
+					labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1"
+					singleContainerFullSize="false">
+					<f:content>
+						<Label text="Tutorial Title"/>
+						<Text id="nameText" text="{i18n>appTitle}"/>
+						<Label text="Description"/>
+						<Text text="{i18n>appDescription}"/>
+						<Label text="Level"/>
+						<Text text="{i18n>level}"/>
+						<Label text="Duration"/>
+						<Text id="countryText" text="{i18n>tutorialDuration}"/>
+					</f:content>
+				</f:SimpleForm>
+			</VBox>
+		</content>
+	</Page>
+</View>

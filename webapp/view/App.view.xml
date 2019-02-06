@@ -17,11 +17,6 @@
 				<OverflowToolbarLayoutData priority="Low" />
 			</layoutData>
 		</Button>
-		<Button text="View 2" type="Transparent" press="navigateToPage2">
-			<layoutData>
-				<OverflowToolbarLayoutData priority="Low" />
-			</layoutData>
-		</Button>
 		<Button text="JSON Data" type="Transparent" press="navigateToUserForm">
 			<layoutData>
 				<OverflowToolbarLayoutData priority="Low" />
@@ -37,16 +32,22 @@
 				<OverflowToolbarLayoutData priority="Low" />
 			</layoutData>
 		</Button>
-		<Button text="List" type="Transparent">
+		<Button text="Routing" type="Transparent" press="navigateToRouting">
 			<layoutData>
 				<OverflowToolbarLayoutData priority="Low" />
 			</layoutData>
 		</Button>
-		<Button text="Tools" type="Transparent">
-			<layoutData>
-				<OverflowToolbarLayoutData priority="Low" />
-			</layoutData>
-		</Button>
+		<!--<Button text="List" type="Transparent">-->
+		<!--	<layoutData>-->
+		<!--		<OverflowToolbarLayoutData priority="Low" />-->
+		<!--	</layoutData>-->
+		<!--</Button>-->
+		<!--<Button text="Tools" type="Transparent">-->
+		<!--	<layoutData>-->
+		<!--		<OverflowToolbarLayoutData priority="Low" />-->
+		<!--	</layoutData>-->
+		<!--</Button>-->
+		
 		<tnt:ToolHeaderUtilitySeparator />
 		<ToolbarSpacer>
 			<layoutData>

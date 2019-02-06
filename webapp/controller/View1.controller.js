@@ -7,8 +7,8 @@ sap.ui.define([
 	return Controller.extend("sapui5-sample-project.sapui5-sample-project.controller.View1", {
 
 		onInit: function () {
-			var sUrl = "#" + this.getOwnerComponent().getRouter().getURL("page2");
-			this.byId("link").setHref(sUrl);
+			// var sUrl = "#" + this.getOwnerComponent().getRouter().getURL("page2");
+			// this.byId("link").setHref(sUrl);
 		},
 
 		onHomePress: function () {

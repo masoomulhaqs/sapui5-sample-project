@@ -3,8 +3,8 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "sap/ui/core/routing/History"], fun
 
 	return Controller.extend("sapui5-sample-project.sapui5-sample-project.controller.View2", {
 		onInit: function () {
-			var sUrl = "#" + this.getOwnerComponent().getRouter().getURL("page1");
-			this.byId("link").setHref(sUrl);
+			// var sUrl = "#" + this.getOwnerComponent().getRouter().getURL("page1");
+			// this.byId("link").setHref(sUrl);
 		},
 
 		onToPage1: function () {

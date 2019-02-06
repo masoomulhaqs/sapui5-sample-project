@@ -3,14 +3,18 @@
 	xmlns:layout="sap.ui.layout"
 	controllerName="sapui5-sample-project.sapui5-sample-project.controller.View2">
 	<Page
-		title="Second Page"
+		title="Test Routing: Second Page"
 		showNavButton="true"
 		navButtonPress="onBack">
 		<content>
+			<VBox class="sapUiLargeMargin">
 			<layout:VerticalLayout>
+				<Text text="You're here in second page!" class="sapUiSmallMarginBottom" />
+				<Text text="Click on the below button to navigate back to previous(first) page" class="sapUiMediumMarginBottom" />
 				<Button text="To the first Page" press="onToPage1"/>
-				<Link id="link" text="A link to the first Page"/>
+				<!--<Link id="link" text="A link to the first Page"/>-->
 			</layout:VerticalLayout>
+			</VBox>
 		</content>
 	</Page>
 </View>

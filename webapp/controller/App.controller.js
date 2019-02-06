@@ -51,6 +51,9 @@ sap.ui.define([
 		},
 		navigateToAppConfig: function(evt) {
 			this.getOwnerComponent().getRouter().navTo("appconfig");
+		},
+		navigateToRouting: function(evt) {
+			this.getOwnerComponent().getRouter().navTo("page1");
 		}
 		
 	});

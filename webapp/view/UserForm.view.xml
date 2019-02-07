@@ -4,20 +4,21 @@
 		<content>
 			<VBox class="sapUiSmallMargin">
 				<MessageStrip text="Below data has been loading from JSON Model" showIcon="true" showCloseButton="true" class="sapUiMediumMarginBottom"></MessageStrip>
-				
-				<f:SimpleForm id="SimpleFormChange354" editable="true" layout="ResponsiveGridLayout" labelSpanXL="3" labelSpanL="3"
-					labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1"
-					columnsL="1" columnsM="1" singleContainerFullSize="false">
+				<f:SimpleForm id="SimpleFormChange35" editable="true" layout="ResponsiveLayout" width="100%">
 					<f:content>
 						<Label text="Name"/>
 						<Input id="name" value="{/name}"/>
 						<Label text="Email"/>
 						<Input id="email" value="{/email}"/>
+						<Label text="Date of Birth"/>
+						<DatePicker id="DP2" value="{/dob}" valueFormat="yyyy-MM-dd" displayFormat="long" change="handleChange" class="sapUiSmallMarginBottom"/>
 						<Label text="Location"/>
 						<Input id="location" value="{/location}"/>
 						<Label text="Portfolio"/>
 						<Input id="portfolio" value="{/portfolio}"/>
-						<Button type="Accept" text="Submit" press="onPress" />
+						<HBox>
+							<Button type="Accept" text="Save" press="onPress"/>
+						</HBox>
 					</f:content>
 				</f:SimpleForm>
 			</VBox>
